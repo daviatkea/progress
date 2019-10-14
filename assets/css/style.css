@@ -151,6 +151,10 @@ progress[value]::-webkit-progress-value {
   color: #fff;
 }
 
+.countdown {
+  margin-top: 30vmin;
+}
+
 html,
 body {
   height: 100%;
