@@ -9,7 +9,7 @@
 section {
   width: 100%;
   display: grid;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 img {
@@ -22,10 +22,18 @@ h1 {
   font-weight: normal;
   font-weight: 700;
   line-height: 1.125;
-  font-size: 10vmin;
+  font-size: 15vmin;
   text-align: center;
-  font-family: "Caveat", cursive;
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 7.5vmin;
+  text-align: center;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: capitalize;
 }
 
 ul {
@@ -80,22 +88,34 @@ progress[value] {
 } */
 
 progress[value]::-webkit-progress-bar {
-  background: hsl(220, 10%, 80%);
+  /* background: hsl(220, 10%, 80%); */
+  background: transparent;
 }
 
 progress[value]::-moz-progress-bar {
-  background: hsl(220, 10%, 80%);
+  /* background: hsl(220, 10%, 80%); */
+  background: transparent;
 }
 
 progress[value]::-webkit-progress-value {
-  background: hsl(calc((var(--value) / 100) * 90), 50%, 50%);
-  filter: contrast(2);
+  /* background: hsl(calc((var(--value) / 100) * 90), 50%, 50%);
+  filter: contrast(2); */
+  background: repeating-linear-gradient(
+    -59deg,
+    #000,
+    #000 4px,
+    #2ab673 4px,
+    #2ab673 20px
+  );
 }
 
 .progresswrapper {
   position: relative;
   display: grid;
   align-items: center;
+  padding: 6px;
+  border-radius: 2rem;
+  border: 1px solid #c1c1c1;
 }
 
 .progresswrapper > * {
@@ -103,14 +123,17 @@ progress[value]::-webkit-progress-value {
 }
 
 .value {
-  font-weight: 700;
+  /* font-weight: 700; */
+  font-style: italic;
   padding: 0 0.5rem;
   font-size: 1.2em;
   position: absolute;
+  top: calc(50% - 0.2rem);
   left: calc(var(--value) * 1%);
-  transform: translateX(-100%);
-  color: hsl(calc((var(--value) / 100) * 90), 50%, 50%);
-  mix-blend-mode: difference;
+  transform: translateY(-50%);
+  /* color: hsl(calc((var(--value) / 100) * 90), 50%, 50%);
+  mix-blend-mode: difference; */
+  color: #fff;
 }
 
 html,
