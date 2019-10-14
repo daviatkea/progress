@@ -44,7 +44,6 @@ li {
   user-select: none;
   margin: 0 auto;
   line-height: 1.1;
-  font-family: "Caveat", cursive;
 }
 
 li span {
@@ -78,7 +77,6 @@ progress[value]:after {
   transform: translateX(-100%);
   color: hsl(calc((var(--value) / 100) * 90), 50%, 50%);
   mix-blend-mode: difference;
-  font-family: "Caveat", cursive;
 }
 
 progress[value]::-webkit-progress-bar {
