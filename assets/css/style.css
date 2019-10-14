@@ -26,6 +26,8 @@ h1 {
   text-align: center;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
+  font-family: "sr", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Helvetica Neue", Arial, sans-serif;
 }
 
 h2 {
