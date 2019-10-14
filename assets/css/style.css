@@ -101,7 +101,7 @@ progress[value]::-webkit-progress-value {
   /* background: hsl(calc((var(--value) / 100) * 90), 50%, 50%);
   filter: contrast(2); */
   background: repeating-linear-gradient(
-    -59deg,
+    -65deg,
     #000,
     #000 4px,
     #2ab673 4px,
