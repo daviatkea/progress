@@ -152,7 +152,7 @@ progress[value]::-webkit-progress-value {
 }
 
 .countdown {
-  margin-top: 30vmin;
+  margin-top: 4rem;
 }
 
 html,
