@@ -67,7 +67,7 @@ progress[value] {
   align-items: center;
 }
 
-progress[value]:after {
+/* progress[value]:after {
   content: attr(value) "%";
   font-weight: 700;
   padding: 0 0.5rem;
@@ -77,7 +77,7 @@ progress[value]:after {
   transform: translateX(-100%);
   color: hsl(calc((var(--value) / 100) * 90), 50%, 50%);
   mix-blend-mode: difference;
-}
+} */
 
 progress[value]::-webkit-progress-bar {
   background: hsl(220, 10%, 80%);
@@ -90,6 +90,27 @@ progress[value]::-moz-progress-bar {
 progress[value]::-webkit-progress-value {
   background: hsl(calc((var(--value) / 100) * 90), 50%, 50%);
   filter: contrast(2);
+}
+
+.progresswrapper {
+  position: relative;
+  display: grid;
+  align-items: center;
+}
+
+.progresswrapper > * {
+  grid-area: 1 / 1;
+}
+
+.value {
+  font-weight: 700;
+  padding: 0 0.5rem;
+  font-size: 1.2em;
+  position: absolute;
+  left: calc(var(--value) * 1%);
+  transform: translateX(-100%);
+  color: hsl(calc((var(--value) / 100) * 90), 50%, 50%);
+  mix-blend-mode: difference;
 }
 
 html,

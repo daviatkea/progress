@@ -1,6 +1,7 @@
 window.addEventListener("load", () => {
+  const pWrap = document.querySelector(".progresswrapper");
   const pBar = document.querySelector("progress");
-  const pBarSpan = document.querySelector(".value");
+  const pBarP = document.querySelector(".value");
 
   const start = new Date(2017, 5, 1),
     end = new Date(2021, 6, 1),
@@ -17,8 +18,8 @@ window.addEventListener("load", () => {
       const d = Math.abs(end - start);
 
       pBar.value = Math.round((q / d) * 100);
-      pBarSpan.textContent = `${Math.round((q / d) * 100)}%`;
-      pBar.style.setProperty("--value", Math.round((q / d) * 100));
+      pBarP.textContent = `${Math.round((q / d) * 100)}%`;
+      pWrap.style.setProperty("--value", Math.round((q / d) * 100));
 
       let now = new Date().getTime(),
         distance = countDown - now;
