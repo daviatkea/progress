@@ -102,4 +102,6 @@ body {
   place-items: center;
   /*background: url('https://images-na.ssl-images-amazon.com/images/I/71VWxgHLZfL._SY500_.jpg') 50% / cover;*/
   padding: 20px;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Helvetica Neue", Arial, sans-serif;
 }
