@@ -18,7 +18,7 @@ window.addEventListener("load", () => {
       const d = Math.abs(end - start);
 
       pBar.value = Math.round((q / d) * 100);
-      pBarP.textContent = `${Math.round((q / d) * 100)}%`;
+      pBarP.innerText = `${Math.round((q / d) * 100)}%`;
       pWrap.style.setProperty("--value", Math.round((q / d) * 100));
 
       let now = new Date().getTime(),
