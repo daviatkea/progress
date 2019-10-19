@@ -45,7 +45,6 @@ h2 {
   text-align: center;
   font-weight: 300;
   font-style: italic;
-  text-transform: capitalize;
   font-family: "Lato", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -89,18 +88,6 @@ progress[value] {
   display: flex;
   align-items: center;
 }
-
-/* progress[value]:after {
-  content: attr(value) "%";
-  font-weight: 700;
-  padding: 0 0.5rem;
-  font-size: 1.2em;
-  position: absolute;
-  left: calc(var(--value) * 1%);
-  transform: translateX(-100%);
-  color: hsl(calc((var(--value) / 100) * 90), 50%, 50%);
-  mix-blend-mode: difference;
-} */
 
 progress[value]::-webkit-progress-bar {
   /* background: hsl(220, 10%, 80%); */

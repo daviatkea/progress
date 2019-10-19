@@ -3,8 +3,8 @@ window.addEventListener("load", () => {
   const pBar = document.querySelector("progress");
   const pBarP = document.querySelector(".value");
 
-  const start = new Date(2017, 5, 1),
-    end = new Date(2021, 6, 1),
+  const start = new Date("May 1 2017"),
+    end = new Date("Jul 1 2021"),
     today = new Date();
 
   const second = 1000,
