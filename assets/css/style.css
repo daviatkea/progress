@@ -6,6 +6,14 @@
   text-rendering: optimizeLegibility;
 } */
 
+:root {
+  --bg: #fff;
+}
+
+body {
+  background: var(--bg);
+}
+
 *,
 *:before,
 *:after {
@@ -104,8 +112,8 @@ progress[value]::-webkit-progress-value {
   filter: contrast(2); */
   background: repeating-linear-gradient(
     -65deg,
-    #000,
-    #000 4px,
+    var(--bg),
+    var(--bg) 4px,
     #2ab673 4px,
     #2ab673 20px
   );
@@ -158,7 +166,8 @@ body {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: #000;
+    --bg: #000;
+    /* background: #000; */
     color: #fff;
   }
 }
