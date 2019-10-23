@@ -21,7 +21,7 @@ window.addEventListener("load", () => {
       const d = Math.abs(end - start);
 
       pBar.value = Math.round((q / d) * 100);
-      pBarP.innerText = `${((q / d) * 100).toFixed(2)}%`;
+      pBarP.innerText = `${Math.round((q / d) * 100)}%`;
       pWrap.style.setProperty("--value", Math.round((q / d) * 100));
 
       (document.getElementById("days").innerText = Math.floor(distance / day)),
