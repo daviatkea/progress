@@ -147,9 +147,10 @@ progress[value]::-webkit-progress-value {
 .value {
   /* font-weight: 700; */
   font-style: italic;
-  padding: 0 0.5rem 0 0;
+  padding: 0 0.15rem;
   font-size: 0.9em;
   background: #000;
+  border-radius: 1rem;
   position: absolute;
   top: calc(50% - 0.2rem);
   left: calc(var(--value) * 1%);
